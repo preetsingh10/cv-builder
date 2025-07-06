@@ -1,3 +1,11 @@
 .app-title{
+    border: 1px solid red;
+}
+.container{
     border: 1px solid black;
+    border-radius: 5px ;
+}
+.button-container{
+    display: flex;
+    justify-content: end;
 }
