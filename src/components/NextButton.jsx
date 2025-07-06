@@ -1,6 +1,6 @@
-function NextButton(){
+function NextButton({step,setStep}){
     return(
-        <button>Next</button>
+        <button onClick={()=> setStep(step + 1)}>Next</button>
     )
 }
 export default NextButton

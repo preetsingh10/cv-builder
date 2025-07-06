@@ -1,0 +1,32 @@
+.stepper-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.stepper-container>button{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: 1px solid black;
+    position: relative;
+    
+}
+.stepper-container button::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -55%;
+    width: 20px;
+    height: 1px;
+    transform: translateY(-50%);
+    background-color: black;
+  
+}
+.stepper-container button:last-child::after{
+    display: none;
+}
+.currentstep{
+    background-color: black;
+    color: white;
+}
