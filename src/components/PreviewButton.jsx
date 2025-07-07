@@ -1,6 +1,6 @@
-function PreviewButton({step, setStep}){
+function PreviewButton(){
     return (
-        <button onClick={()=>setStep(step-1)}>Preview</button>
+        <button >Preview</button>
     )
-} 
+}
 export default PreviewButton

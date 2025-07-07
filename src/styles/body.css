@@ -1,6 +1,9 @@
 body{
     padding: 0.5rem;
 }
+textarea{
+    resize: none;
+}
 #root{
     display: flex;
     flex-direction: column;
@@ -9,9 +12,10 @@ body{
 .app-title{
     border: 1px solid red;
 }
-.container{
+.form-container{
     border: 1px solid black;
     border-radius: 5px ;
+    padding: 0.3rem;
 }
 .button-container{
     display: flex;

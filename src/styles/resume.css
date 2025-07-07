@@ -1,0 +1,22 @@
+.resume-container{
+  
+    border: 1px solid black;
+
+}
+.contact-section{
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+}
+.phoneNumber, .email{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+
+.phoneNumber{
+    
+    
+}

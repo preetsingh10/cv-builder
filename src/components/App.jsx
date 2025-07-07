@@ -4,23 +4,35 @@ import Heading from "./heading"
 import NextButton from "./NextButton"
 import PreviewButton from "./PreviewButton"
 import Stepper from "./Stepper"
-function App(){
-const [step,setStep] = useState(1)
-if(step < 1){
-    setStep(1)
-}
-    return(
+import Experience from "./Experience"
+import Resume from "./Resume"
+function App() {
+    const [step, setStep] = useState(1)
+    const [personalInfo, setPersonalInfo] = useState({
+        firstName: " ",
+        lastName: "",
+        aboutMe: "",
+        phoneNumber: '',
+        email: ""
+        
+    })
+    if (step < 1) {
+        setStep(1)
+    }
+    return (
         <>
-        <h1 className="app-title">CV builder</h1>
-        <Stepper step={step} setStep={setStep}/>
-        <div className="container">
-        {step === 1 && <Heading />}
-        {step ===2 && <Education/>}
-        </div>
-        <div className="button-container">
-        <PreviewButton step={step} setStep={setStep}/>
-        <NextButton step={step} setStep={setStep}/>
-        </div>
+            <h1 className="app-title">CV builder</h1>
+            <Stepper step={step} setStep={setStep} />
+            <div className="form-container">
+                {step === 1 && <Heading personalInfo={personalInfo} setPersonalInfo={setPersonalInfo} />}
+                {step === 2 && <Education />}
+                {step === 3 && <Experience />}
+            </div>
+            <div className="button-container">
+                <PreviewButton />
+                <NextButton step={step} setStep={setStep} />
+            </div>
+            <Resume heading={personalInfo} />
         </>
     )
 }
