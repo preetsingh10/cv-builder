@@ -14,8 +14,8 @@ function App() {
         aboutMe: "",
         phoneNumber: '',
         email: ""
-        
     })
+    const [education, setEducation] =  useState([{}])
     if (step < 1) {
         setStep(1)
     }
@@ -25,14 +25,14 @@ function App() {
             <Stepper step={step} setStep={setStep} />
             <div className="form-container">
                 {step === 1 && <Heading personalInfo={personalInfo} setPersonalInfo={setPersonalInfo} />}
-                {step === 2 && <Education />}
+                {step === 2 && <Education education={education} setEducation={setEducation}/>}
                 {step === 3 && <Experience />}
             </div>
             <div className="button-container">
                 <PreviewButton />
                 <NextButton step={step} setStep={setStep} />
             </div>
-            <Resume heading={personalInfo} />
+            <Resume heading={personalInfo} education={education} />
         </>
     )
 }

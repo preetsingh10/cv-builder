@@ -2,3 +2,6 @@
     display: grid;
     grid-template-columns: 1fr;
 }
+.educationData{
+    border: 1px solid black;
+}
