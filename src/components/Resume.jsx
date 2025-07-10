@@ -1,4 +1,4 @@
-function Resume({heading, education}) {
+function Resume({ heading, education, experience }) {
 	return (
 		<div className="resume-container">
 			<div className="heading">
@@ -15,17 +15,32 @@ function Resume({heading, education}) {
 			</div>
 			<div className="aboutme-section">
 				<h3>About Me</h3>
-			<hr />
-			<pre>{heading.aboutMe}</pre>
+				<hr />
+				<pre>{heading.aboutMe}</pre>
 			</div>
 			<div className="education-container">
 				<h3>Education</h3>
-				{education.map((data,index)=>{
+				{education.length !== 0 && education.map(data => {
 					return (
-						<div className="educationData" key={index}>
-							<h3>{data.schoolName}</h3>
-							<h3>{data.location}</h3>
+						<div className="educationData" key={data.id}>
 							<h3>{data.titleOfStudy}</h3>
+							<p>{data.schoolName}</p>
+							<p>{data.location}</p>
+						</div>
+					)
+				})}
+			</div>
+			<div className="experience-container">
+				<h3>Experience</h3>
+				{experience.map(data => {
+					return (
+						<div className="experienceData" key={data.id}>
+							<h3>{data.jobRole}</h3>
+							<p>{data.employer}</p>
+							<p>{data.location}</p>
+							<p>{data.startinDate}</p>
+							<p>{data.endDate}</p>
+							<p>{data.description}</p>
 						</div>
 					)
 				})}
