@@ -38,7 +38,7 @@ function Resume({ heading, education, experience }) {
 							<h3>{data.jobRole}</h3>
 							<p>{data.employer}</p>
 							<p>{data.location}</p>
-							<p>{data.startinDate}</p>
+							<p>{data.startingDate}</p>
 							<p>{data.endDate}</p>
 							<p>{data.description}</p>
 						</div>
