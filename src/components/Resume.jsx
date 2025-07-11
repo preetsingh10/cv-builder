@@ -1,4 +1,6 @@
-function Resume({ heading, education, experience }) {
+
+
+function Resume({ heading, education, experience, skills }) {
 	return (
 		<div className="resume-container">
 			<div className="heading">
@@ -44,6 +46,14 @@ function Resume({ heading, education, experience }) {
 						</div>
 					)
 				})}
+			</div>
+			<div className="skills-container">
+				<h3>Skills</h3>
+				{skills.map(skill=>(
+					<div className="skill"  key={skill.id}>
+						<p>{skill.title}</p>
+					</div>
+				))}
 			</div>
 		</div>
 	)
