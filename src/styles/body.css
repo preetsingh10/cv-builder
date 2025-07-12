@@ -10,9 +10,14 @@ body {
   padding: 0;
 }
 #root {
+  width: 50%;
+
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+pre {
+  font-family: inherit;
 }
 label {
   display: block;
@@ -53,7 +58,6 @@ textarea {
   /* border: 1px solid black; */
   border-radius: 5px;
   padding: 0.3rem;
-  
 }
 .button-container {
   display: flex;
@@ -76,6 +80,14 @@ dialog {
   overflow: scroll;
 }
 @media only screen and (max-width: 500px) {
+  #root {
+    width: 100%;
+    padding: 2%;
+  }
+  /* body{
+        justify-content:start ;
+        margin-left: 4%;
+    } */
   dialog {
     width: 100%;
     align-self: center;
@@ -85,6 +97,13 @@ dialog {
     border: none;
     overflow: scroll;
   }
+}
+.appHeading {
+  display: flex;
+}
+.resumeIcon {
+  width: 50px;
+  height: 50px;
 }
 button {
   display: inline-block;
@@ -127,12 +146,11 @@ button:disabled {
 .button--next:hover {
   background-color: #218838;
 }
-.addButton{
-    margin-top: 10px;
+.addButton {
+  margin-top: 10px;
   background-color: #fd7e14;
 }
 
 .addButton:hover {
-    
   background-color: #e96b05;
 }

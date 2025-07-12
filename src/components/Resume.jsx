@@ -33,7 +33,7 @@ function Resume({ heading, education, experience, skills }) {
 						<section className="resume__about">
 							<h2>About Me</h2>
 							<hr />
-							<p>{heading.aboutMe}</p>
+							<pre>{heading.aboutMe}</pre>
 						</section>
 					)}
 
@@ -63,7 +63,7 @@ function Resume({ heading, education, experience, skills }) {
 									<p>
 										{data.startingDate} – {data.endDate}
 									</p>
-									<p>{data.description}</p>
+									<pre>{data.description}</pre>
 								</article>
 							))}
 						</section>

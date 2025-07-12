@@ -24,7 +24,11 @@ function App() {
     }
     return (
         <>
-            <h1 className="app-title">CV builder</h1>
+            <div className="appHeading">
+                <img className="resumeIcon" src="src/assets/reshot-icon-resume-RK2HTZ6GUA.svg" alt="resume icon" />
+                <h1 className="app-title">CV Builder</h1>
+            </div>
+
             <Stepper step={step} setStep={setStep} />
             <div className="form-container">
                 {step === 1 && <Heading personalInfo={personalInfo} setPersonalInfo={setPersonalInfo} />}
