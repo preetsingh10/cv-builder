@@ -5,11 +5,14 @@
     gap: 20px;
 }
 .stepper-container>button{
+    
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 50%;
-    border: 1px solid black;
+    border: 1px solid white;
     position: relative;
+    padding: 0;
+    
     
 }
 .stepper-container button::after{
@@ -27,6 +30,6 @@
     display: none;
 }
 .currentstep{
-    background-color: black;
+    background-color: rgb(1, 2, 69);
     color: white;
 }

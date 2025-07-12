@@ -1,28 +1,64 @@
 body {
-  padding: 0.5rem;
   display: flex;
   justify-content: space-around;
-}
-
-textarea {
-  resize: none;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
 }
 #root {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.app-title {
-  border: 1px solid red;
+label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  color: #333;
+  font-size: 0.95rem;
+  font-family: "Inter", sans-serif;
 }
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 0.6rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+  background-color: #fff;
+  color: #222;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #007acc; /* Calm blue */
+  box-shadow: 0 0 0 2px rgba(0, 122, 204, 0.2);
+}
+
+textarea {
+  resize: none;
+}
+
 .form-container {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   border-radius: 5px;
   padding: 0.3rem;
+  
 }
 .button-container {
   display: flex;
   justify-content: end;
+  gap: 10px;
 }
 ::backdrop {
   background: rgba(0, 0, 0, 0.517);
@@ -47,5 +83,56 @@ dialog {
     margin-top: 1%;
     background-color: transparent;
     border: none;
+    overflow: scroll;
   }
+}
+button {
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: inherit;
+  color: #fff;
+  background-color: #0073ff; /* fallback primary */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+button:hover {
+  filter: brightness(0.9);
+}
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(74, 126, 188, 0.4);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.button--preview {
+  background-color: #0073ff;
+}
+
+.button--preview:hover {
+  background-color: #3a6da5;
+}
+.button--next {
+  background-color: #28a745;
+}
+
+.button--next:hover {
+  background-color: #218838;
+}
+.addButton{
+    margin-top: 10px;
+  background-color: #fd7e14;
+}
+
+.addButton:hover {
+    
+  background-color: #e96b05;
 }

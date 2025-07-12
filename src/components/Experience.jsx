@@ -37,7 +37,7 @@ function Experience({ experience, setExperience }) {
                 <input type="date" name="endDate" id="endDate" value={tempForm.endDate || ""} onChange={handleChange} />
                 <label htmlFor="description">Description</label>
                 <textarea name="description" id="description" value={tempForm.description || ""} onChange={handleChange}></textarea>
-                <button onClick={addExperience}>Add</button>
+                <button className="addButton" onClick={addExperience}>Add</button>
             </div>
         </>
     )

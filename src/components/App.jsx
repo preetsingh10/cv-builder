@@ -10,7 +10,7 @@ import Skills from "./Skills"
 function App() {
     const [step, setStep] = useState(1)
     const [personalInfo, setPersonalInfo] = useState({
-        firstName: " ",
+        firstName: "",
         lastName: "",
         aboutMe: "",
         phoneNumber: '',

@@ -32,7 +32,7 @@ function Education({ education, setEducation }) {
                 <input type="text" name="location" id="location" value={tempForm.location || ""} onChange={handleChange} />
                 <label htmlFor="titleOfStudy">Title of Study</label>
                 <input type="text" name="titleOfStudy" id="titleOfStudy" value={tempForm.titleOfStudy || ""} onChange={handleChange} />
-                <button type="button" onClick={addFormData}>Add</button>
+                <button className="addButton" type="button" onClick={addFormData}>Add</button>
             </div>
 
         </>

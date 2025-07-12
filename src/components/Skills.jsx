@@ -9,9 +9,9 @@ function Skills({skills, setSkills}) {
         <>
             <h2>Skills</h2>
             <div className="skills-form">
-                <label htmlFor="skill">Skills</label>
+               
                 <input type="text" name="skill" id="skill" />
-                <button onClick={addSkill}>Add Skill</button>
+                <button className="addButton"  onClick={addSkill}>Add Skill</button>
             </div>
 
         </>
