@@ -1,6 +1,8 @@
 function PreviewButton(){
+    const dialog = document.querySelector("dialog")
+
     return (
-        <button >Preview</button>
+        <button onClick={()=>dialog.showModal()}>Preview</button>
     )
 }
 export default PreviewButton

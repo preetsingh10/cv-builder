@@ -1,23 +1,51 @@
-body{
-    padding: 0.5rem;
+body {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-around;
 }
-textarea{
-    resize: none;
+
+textarea {
+  resize: none;
 }
-#root{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+#root {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-.app-title{
-    border: 1px solid red;
+.app-title {
+  border: 1px solid red;
 }
-.form-container{
-    border: 1px solid black;
-    border-radius: 5px ;
-    padding: 0.3rem;
+.form-container {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 0.3rem;
 }
-.button-container{
-    display: flex;
-    justify-content: end;
+.button-container {
+  display: flex;
+  justify-content: end;
+}
+::backdrop {
+  background: rgba(0, 0, 0, 0.517);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+dialog {
+  width: 65%;
+  height: 90%;
+  align-self: center;
+  justify-self: center;
+  margin-top: 1%;
+  background-color: transparent;
+  border: none;
+  overflow: scroll;
+}
+@media only screen and (max-width: 500px) {
+  dialog {
+    width: 100%;
+    align-self: center;
+    justify-self: center;
+    margin-top: 1%;
+    background-color: transparent;
+    border: none;
+  }
 }

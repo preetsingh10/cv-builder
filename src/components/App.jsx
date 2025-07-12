@@ -18,7 +18,7 @@ function App() {
     })
     const [education, setEducation] = useState([])
     const [experience, setExperience] = useState([])
-    const[skills,setSkills] = useState([])
+    const [skills, setSkills] = useState([])
     if (step < 1) {
         setStep(1)
     }
@@ -30,13 +30,16 @@ function App() {
                 {step === 1 && <Heading personalInfo={personalInfo} setPersonalInfo={setPersonalInfo} />}
                 {step === 2 && <Education education={education} setEducation={setEducation} />}
                 {step === 3 && <Experience experience={experience} setExperience={setExperience} />}
-                {step === 4 && <Skills skills={skills} setSkills={setSkills}/>}
+                {step === 4 && <Skills skills={skills} setSkills={setSkills} />}
             </div>
             <div className="button-container">
                 <PreviewButton />
                 <NextButton step={step} setStep={setStep} />
             </div>
-            <Resume heading={personalInfo} education={education} experience={experience} skills={skills} />
+            <dialog id="resumeDialog">
+
+                <Resume heading={personalInfo} education={education} experience={experience} skills={skills} />
+            </dialog>
         </>
     )
 }

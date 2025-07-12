@@ -1,4 +1,5 @@
 import { useState } from "react"
+import capitalize from "../utility/capitalize"
 
 function Education({ education, setEducation }) {
     const [tempForm, setTempForm] = useState({})
@@ -17,7 +18,7 @@ function Education({ education, setEducation }) {
         const { name, value } = e.target
         setTempForm((tempForm) => ({
             ...tempForm,
-            [name]: value
+            [name]: capitalize(value)
         }))
     }
 

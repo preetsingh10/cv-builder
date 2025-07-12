@@ -1,8 +1,9 @@
+import capitalize from "../utility/capitalize"
 function Skills({skills, setSkills}) {
     function addSkill(){
         const skill = document.getElementById('skill').value
-        setSkills((skills)=>[...skills, {id:crypto.randomUUID(), title: [skill]}])
-       document.getElementById('skill').value = " " 
+        setSkills((skills)=>[...skills, {id:crypto.randomUUID(), title: [capitalize(skill)]}])
+       document.getElementById('skill').value = "" 
     }
     return (
         <>

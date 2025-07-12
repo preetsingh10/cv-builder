@@ -18,3 +18,50 @@
 .skill{
     border: 1px solid greenyellow;
 }
+.resume__topBar{
+    display: flex;
+    justify-content: end;
+}
+.resume__topBar button{
+        border: none;
+        background-color: transparent;
+}
+
+
+
+/* ######################################################## */
+.resume__container {
+ 
+
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  color: #333;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.resume__name {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.resume__contactItem {
+  margin-bottom: 0.5rem;
+}
+
+.resume__skillsList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.resume__skill {
+  background: #007acc;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+}
