@@ -33,11 +33,7 @@ function EditEducation({ data, setData, currentState }) {
         ))
     }
     function handleDelete() {
-        let newState = currentState.filter(item => {
-            if (item.id !== data.id) {
-                return item
-            }
-        })
+        let newState = currentState.filter(item => item.id !== data.id)
         setData([...newState])
     }
     return (
