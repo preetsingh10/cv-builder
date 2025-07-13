@@ -78,7 +78,8 @@ dialog {
   margin-top: 1%;
   background-color: transparent;
   border: none;
-  overflow: scroll;
+  
+
 }
 @media only screen and (max-width: 800px) {
   #root {
