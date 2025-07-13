@@ -53,7 +53,6 @@ function App() {
                 {step !== 5 && <NextButton step={step} setStep={setStep} />}
             </div>
             <dialog id="resumeDialog">
-
                 <Resume heading={personalInfo} education={education} experience={experience} skills={skills} />
             </dialog>
         </>
