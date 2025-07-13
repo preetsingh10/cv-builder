@@ -1,7 +1,7 @@
 import { useState } from "react"
 import capitalize from "../utility/capitalize"
 
-function Education({ education, setEducation }) {
+function Education({ education, setEducation}) {
     const [tempForm, setTempForm] = useState({})
     function addFormData() {
         const formIsEmpty = Object.values(tempForm).every(value => value === "")

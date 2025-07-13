@@ -7,6 +7,8 @@ import Stepper from "./Stepper"
 import Experience from "./Experience"
 import Resume from "./Resume"
 import Skills from "./Skills"
+import Edit from "./Edit"
+import icon from "../assets/reshot-icon-resume-RK2HTZ6GUA.svg"
 function App() {
     const [step, setStep] = useState(1)
     const [personalInfo, setPersonalInfo] = useState({
@@ -19,13 +21,22 @@ function App() {
     const [education, setEducation] = useState([])
     const [experience, setExperience] = useState([])
     const [skills, setSkills] = useState([])
+    const allState = {
+        personalInfo,
+        education,
+        experience,
+        skills
+    }
+    const allSetFunctions = {
+        setPersonalInfo, setEducation, setExperience, setSkills
+    }
     if (step < 1) {
         setStep(1)
     }
     return (
         <>
             <div className="appHeading">
-                <img className="resumeIcon" src="src/assets/reshot-icon-resume-RK2HTZ6GUA.svg" alt="resume icon" />
+                <img className="resumeIcon" src={icon} alt="resume icon" />
                 <h1 className="app-title">CV Builder</h1>
             </div>
 
@@ -35,6 +46,7 @@ function App() {
                 {step === 2 && <Education education={education} setEducation={setEducation} />}
                 {step === 3 && <Experience experience={experience} setExperience={setExperience} />}
                 {step === 4 && <Skills skills={skills} setSkills={setSkills} />}
+                {step === 5 && <Edit currentState={allState} setState={allSetFunctions} />}
             </div>
             <div className="button-container">
                 <PreviewButton />

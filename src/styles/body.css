@@ -10,7 +10,7 @@ body {
   padding: 0;
 }
 #root {
-  width: 50%;
+  width: 100%;
 
   display: flex;
   flex-direction: column;
@@ -79,15 +79,11 @@ dialog {
   border: none;
   overflow: scroll;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 800px) {
   #root {
     width: 100%;
     padding: 2%;
   }
-  /* body{
-        justify-content:start ;
-        margin-left: 4%;
-    } */
   dialog {
     width: 100%;
     align-self: center;
@@ -98,6 +94,16 @@ dialog {
     overflow: scroll;
   }
 }
+@media only screen and (min-width: 1000px) {
+  #root {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  #root {
+    width: 20%;
+  }
+}
 .appHeading {
   display: flex;
 }
@@ -106,7 +112,7 @@ dialog {
   height: 50px;
 }
 button {
-  display: inline-block;
+  
   padding: 0.5rem 1.2rem;
   font-size: 1rem;
   font-weight: 700;
@@ -154,3 +160,4 @@ button:disabled {
 .addButton:hover {
   background-color: #e96b05;
 }
+

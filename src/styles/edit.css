@@ -1,0 +1,20 @@
+.edit {
+  /* border: 1px solid blue; */
+}
+.editButtonContainer {
+  display: flex;
+ align-items: center;
+ justify-content: end;
+ margin-top: 10px;
+}
+.editButton{
+  font-size: 0.8rem;
+  padding: 0.4rem 0.4rem;
+  font-weight: 600;
+}
+.deleteButton {
+  all: unset;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
