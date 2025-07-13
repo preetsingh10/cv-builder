@@ -50,7 +50,7 @@ function App() {
             </div>
             <div className="button-container">
                 <PreviewButton />
-                <NextButton step={step} setStep={setStep} />
+                {step !== 5 && <NextButton step={step} setStep={setStep} />}
             </div>
             <dialog id="resumeDialog">
 
