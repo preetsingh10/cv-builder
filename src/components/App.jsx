@@ -9,7 +9,7 @@ import Resume from "./Resume"
 import Skills from "./Skills"
 import Edit from "./Edit"
 import icon from "../assets/reshot-icon-resume-RK2HTZ6GUA.svg"
-import DownloadButton from "./DownloadButton"
+
 
 function App() {
     const [step, setStep] = useState(1)
@@ -53,8 +53,6 @@ function App() {
             <div className="button-container">
                 <PreviewButton />
                 {step !== 5 && <NextButton step={step} setStep={setStep} />}
-                {/* download feature still needs to be fixed 
-                {step === 5 && <DownloadButton/>}  */}
                 
             </div>
             <dialog id="resumeDialog">

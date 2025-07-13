@@ -64,6 +64,7 @@ textarea {
   display: flex;
   justify-content: end;
   gap: 10px;
+  margin-bottom: 1.2rem;
 }
 ::backdrop {
   background: rgba(0, 0, 0, 0.517);
@@ -78,8 +79,6 @@ dialog {
   margin-top: 1%;
   background-color: transparent;
   border: none;
-  
-
 }
 @media only screen and (max-width: 800px) {
   #root {
@@ -114,7 +113,6 @@ dialog {
   height: 50px;
 }
 button {
-  
   padding: 0.5rem 1.2rem;
   font-size: 1rem;
   font-weight: 700;
@@ -140,8 +138,9 @@ button:disabled {
   opacity: 0.5;
   cursor: not-allowed;
 }
-.button--preview {
+.previewButton {
   background-color: #0073ff;
+ 
 }
 
 .button--preview:hover {
@@ -162,4 +161,3 @@ button:disabled {
 .addButton:hover {
   background-color: #e96b05;
 }
-
